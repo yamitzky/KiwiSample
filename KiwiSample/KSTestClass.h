@@ -10,6 +10,8 @@
 
 @interface KSTestClass : NSObject
 
-- (BOOL)meetSomeExpectation;
+@property (nonatomic, strong) NSObject *currentStatus;
+
+- (void)notImplementedMethod;
 
 @end

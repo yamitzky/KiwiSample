@@ -10,10 +10,9 @@
 
 @implementation KSTestClass
 
-- (BOOL)meetSomeExpectation
+- (void)notImplementedMethod
 {
     // ...
-    return YES;
 }
 
 @end
