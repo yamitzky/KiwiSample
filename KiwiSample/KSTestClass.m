@@ -10,9 +10,13 @@
 
 @implementation KSTestClass
 
-- (void)notImplementedMethod
+- (NSString *)greet:(NSString *)password
 {
-    // ...
+    return password;
+}
+
++ (NSString *)classification {
+    return @"Hello, World!";
 }
 
 @end

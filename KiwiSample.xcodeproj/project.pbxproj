@@ -10,6 +10,7 @@
 		47548D22171FE7080048DBA5 /* KSSampleSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 47548D21171FE7080048DBA5 /* KSSampleSpecs.m */; };
 		47548D28171FECF20048DBA5 /* KSTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 47548D27171FECF20048DBA5 /* KSTestClass.m */; };
 		47548D2B171FF17C0048DBA5 /* KSSampleMocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 47548D2A171FF17C0048DBA5 /* KSSampleMocks.m */; };
+		47548D2E171FF9F40048DBA5 /* KSSampleStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = 47548D2D171FF9F40048DBA5 /* KSSampleStubs.m */; };
 		479F3735171F998E00DBBAFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3734171F998E00DBBAFD /* UIKit.framework */; };
 		479F3737171F998E00DBBAFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3736171F998E00DBBAFD /* Foundation.framework */; };
 		479F3739171F998E00DBBAFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3738171F998E00DBBAFD /* CoreGraphics.framework */; };
@@ -43,6 +44,7 @@
 		47548D26171FECF20048DBA5 /* KSTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTestClass.h; sourceTree = "<group>"; };
 		47548D27171FECF20048DBA5 /* KSTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTestClass.m; sourceTree = "<group>"; };
 		47548D2A171FF17C0048DBA5 /* KSSampleMocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSampleMocks.m; sourceTree = "<group>"; };
+		47548D2D171FF9F40048DBA5 /* KSSampleStubs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSampleStubs.m; sourceTree = "<group>"; };
 		479F3731171F998E00DBBAFD /* KiwiSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479F3734171F998E00DBBAFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		479F3736171F998E00DBBAFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,6 +161,7 @@
 				479F375F171F998F00DBBAFD /* Supporting Files */,
 				47548D21171FE7080048DBA5 /* KSSampleSpecs.m */,
 				47548D2A171FF17C0048DBA5 /* KSSampleMocks.m */,
+				47548D2D171FF9F40048DBA5 /* KSSampleStubs.m */,
 			);
 			path = KiwiSampleTests;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			files = (
 				47548D22171FE7080048DBA5 /* KSSampleSpecs.m in Sources */,
 				47548D2B171FF17C0048DBA5 /* KSSampleMocks.m in Sources */,
+				47548D2E171FF9F40048DBA5 /* KSSampleStubs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

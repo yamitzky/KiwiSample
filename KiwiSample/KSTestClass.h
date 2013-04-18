@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSObject *currentStatus;
 
-- (void)notImplementedMethod;
+- (NSString *)greet:(NSString *)password;
++ (NSString *)classification;
 
 @end
