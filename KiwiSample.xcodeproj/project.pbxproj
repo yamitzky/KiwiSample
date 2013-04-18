@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47548D22171FE7080048DBA5 /* KSSampleSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 47548D21171FE7080048DBA5 /* KSSampleSpecs.m */; };
+		47548D28171FECF20048DBA5 /* KSTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 47548D27171FECF20048DBA5 /* KSTestClass.m */; };
 		479F3735171F998E00DBBAFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3734171F998E00DBBAFD /* UIKit.framework */; };
 		479F3737171F998E00DBBAFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3736171F998E00DBBAFD /* Foundation.framework */; };
 		479F3739171F998E00DBBAFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3738171F998E00DBBAFD /* CoreGraphics.framework */; };
@@ -22,7 +24,6 @@
 		479F375A171F998F00DBBAFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3734171F998E00DBBAFD /* UIKit.framework */; };
 		479F375B171F998F00DBBAFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3736171F998E00DBBAFD /* Foundation.framework */; };
 		479F3763171F998F00DBBAFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 479F3761171F998F00DBBAFD /* InfoPlist.strings */; };
-		47B2B404171FA14100B27190 /* KSSampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B2B403171FA14100B27190 /* KSSampleSpec.m */; };
 		BEA6BB9649C4406D980B9201 /* libPods-KiwiSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6328555CF7949899813F888 /* libPods-KiwiSampleTests.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47548D21171FE7080048DBA5 /* KSSampleSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSampleSpecs.m; sourceTree = "<group>"; };
+		47548D26171FECF20048DBA5 /* KSTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTestClass.h; sourceTree = "<group>"; };
+		47548D27171FECF20048DBA5 /* KSTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTestClass.m; sourceTree = "<group>"; };
 		479F3731171F998E00DBBAFD /* KiwiSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479F3734171F998E00DBBAFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		479F3736171F998E00DBBAFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,7 +61,6 @@
 		479F3758171F998E00DBBAFD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		479F3760171F998F00DBBAFD /* KiwiSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiSampleTests-Info.plist"; sourceTree = "<group>"; };
 		479F3762171F998F00DBBAFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		47B2B403171FA14100B27190 /* KSSampleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSampleSpec.m; sourceTree = "<group>"; };
 		A6328555CF7949899813F888 /* libPods-KiwiSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KiwiSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FCB5AC6EC04BEF86CEA04E /* Pods-KiwiSampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiwiSampleTests.xcconfig"; path = "Pods/Pods-KiwiSampleTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -128,6 +131,8 @@
 				479F374D171F998E00DBBAFD /* KSViewController.m */,
 				479F374F171F998E00DBBAFD /* KSViewController.xib */,
 				479F373B171F998E00DBBAFD /* Supporting Files */,
+				47548D26171FECF20048DBA5 /* KSTestClass.h */,
+				47548D27171FECF20048DBA5 /* KSTestClass.m */,
 			);
 			path = KiwiSample;
 			sourceTree = "<group>";
@@ -150,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				479F375F171F998F00DBBAFD /* Supporting Files */,
-				47B2B403171FA14100B27190 /* KSSampleSpec.m */,
+				47548D21171FE7080048DBA5 /* KSSampleSpecs.m */,
 			);
 			path = KiwiSampleTests;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				479F3741171F998E00DBBAFD /* main.m in Sources */,
 				479F3745171F998E00DBBAFD /* KSAppDelegate.m in Sources */,
 				479F374E171F998E00DBBAFD /* KSViewController.m in Sources */,
+				47548D28171FECF20048DBA5 /* KSTestClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47B2B404171FA14100B27190 /* KSSampleSpec.m in Sources */,
+				47548D22171FE7080048DBA5 /* KSSampleSpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
