@@ -22,7 +22,8 @@
 		479F375A171F998F00DBBAFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3734171F998E00DBBAFD /* UIKit.framework */; };
 		479F375B171F998F00DBBAFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479F3736171F998E00DBBAFD /* Foundation.framework */; };
 		479F3763171F998F00DBBAFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 479F3761171F998F00DBBAFD /* InfoPlist.strings */; };
-		479F3766171F998F00DBBAFD /* KiwiSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 479F3765171F998F00DBBAFD /* KiwiSampleTests.m */; };
+		47B2B404171FA14100B27190 /* KSSampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B2B403171FA14100B27190 /* KSSampleSpec.m */; };
+		BEA6BB9649C4406D980B9201 /* libPods-KiwiSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6328555CF7949899813F888 /* libPods-KiwiSampleTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +57,9 @@
 		479F3758171F998E00DBBAFD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		479F3760171F998F00DBBAFD /* KiwiSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiSampleTests-Info.plist"; sourceTree = "<group>"; };
 		479F3762171F998F00DBBAFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		479F3764171F998F00DBBAFD /* KiwiSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiSampleTests.h; sourceTree = "<group>"; };
-		479F3765171F998F00DBBAFD /* KiwiSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiwiSampleTests.m; sourceTree = "<group>"; };
+		47B2B403171FA14100B27190 /* KSSampleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSampleSpec.m; sourceTree = "<group>"; };
+		A6328555CF7949899813F888 /* libPods-KiwiSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KiwiSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FCB5AC6EC04BEF86CEA04E /* Pods-KiwiSampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiwiSampleTests.xcconfig"; path = "Pods/Pods-KiwiSampleTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				479F3759171F998E00DBBAFD /* SenTestingKit.framework in Frameworks */,
 				479F375A171F998F00DBBAFD /* UIKit.framework in Frameworks */,
 				479F375B171F998F00DBBAFD /* Foundation.framework in Frameworks */,
+				BEA6BB9649C4406D980B9201 /* libPods-KiwiSampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,7 @@
 				479F375E171F998F00DBBAFD /* KiwiSampleTests */,
 				479F3733171F998E00DBBAFD /* Frameworks */,
 				479F3732171F998E00DBBAFD /* Products */,
+				B0FCB5AC6EC04BEF86CEA04E /* Pods-KiwiSampleTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +114,7 @@
 				479F3736171F998E00DBBAFD /* Foundation.framework */,
 				479F3738171F998E00DBBAFD /* CoreGraphics.framework */,
 				479F3758171F998E00DBBAFD /* SenTestingKit.framework */,
+				A6328555CF7949899813F888 /* libPods-KiwiSampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,9 +149,8 @@
 		479F375E171F998F00DBBAFD /* KiwiSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				479F3764171F998F00DBBAFD /* KiwiSampleTests.h */,
-				479F3765171F998F00DBBAFD /* KiwiSampleTests.m */,
 				479F375F171F998F00DBBAFD /* Supporting Files */,
+				47B2B403171FA14100B27190 /* KSSampleSpec.m */,
 			);
 			path = KiwiSampleTests;
 			sourceTree = "<group>";
@@ -184,10 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 479F376C171F998F00DBBAFD /* Build configuration list for PBXNativeTarget "KiwiSampleTests" */;
 			buildPhases = (
+				6F230192D4F74B58BB2C9B19 /* Check Pods Manifest.lock */,
 				479F3752171F998E00DBBAFD /* Sources */,
 				479F3753171F998E00DBBAFD /* Frameworks */,
 				479F3754171F998E00DBBAFD /* Resources */,
 				479F3755171F998E00DBBAFD /* ShellScript */,
+				7AD0A0AE1A2745F0B3DBE660 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +270,34 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		6F230192D4F74B58BB2C9B19 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		7AD0A0AE1A2745F0B3DBE660 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-KiwiSampleTests-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -281,7 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				479F3766171F998F00DBBAFD /* KiwiSampleTests.m in Sources */,
+				47B2B404171FA14100B27190 /* KSSampleSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +437,7 @@
 		};
 		479F376D171F998F00DBBAFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0FCB5AC6EC04BEF86CEA04E /* Pods-KiwiSampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KiwiSample.app/KiwiSample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -420,6 +455,7 @@
 		};
 		479F376E171F998F00DBBAFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0FCB5AC6EC04BEF86CEA04E /* Pods-KiwiSampleTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KiwiSample.app/KiwiSample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -454,6 +490,7 @@
 				479F376B171F998F00DBBAFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		479F376C171F998F00DBBAFD /* Build configuration list for PBXNativeTarget "KiwiSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +499,7 @@
 				479F376E171F998F00DBBAFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
